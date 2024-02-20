@@ -61,6 +61,7 @@ else
     /filebrowser users add $WEB_USERNAME $WEB_PASSWORD --database $DATABASE_PATH > /dev/null
 fi
 
+echo $DATABASE_PATH
 echo $WEB_USERNAME > $FILEBROWSER_USERNAME_PATH
 
 /filebrowser users update $WEB_USERNAME --password $WEB_PASSWORD --database $DATABASE_PATH > /dev/null
