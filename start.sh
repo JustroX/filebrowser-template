@@ -55,6 +55,8 @@ else
 
     echo setting configurations
     /filebrowser config set --address "0.0.0.0" --database $DATABASE_PATH > /dev/null
+    /filebrowser config set --commands zip,unzip,ls,bash
+    /filebrowser config set --shell 'bash -c'
 
     /filebrowser users add $WEB_USERNAME $WEB_PASSWORD --database $DATABASE_PATH > /dev/null
 fi
